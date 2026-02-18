@@ -1,0 +1,16 @@
+# ===== Backend (Spring Boot) =====
+ems_backend/target/
+ems_backend/.idea/
+ems_backend/*.log
+ems_backend/application.properties
+ems_backend/application.yml
+
+# ===== Frontend (React) =====
+ems_frontend/node_modules/
+ems_frontend/dist/
+ems_frontend/build/
+ems_frontend/.env
+
+# ===== Common =====
+.vscode/
+.DS_Store
