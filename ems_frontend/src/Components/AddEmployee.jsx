@@ -95,7 +95,7 @@ const AddEmployee = ({ refresh }) => {
 
     return (
         <div className=' shadow-sm max-w-2xl flex m-auto '>
-            <div className='px-8 py-4   gap-1.5 '>
+            <div className='px-8 py-4 gap-1.5 '>
                 <div className='font-thin text-2xl tracking-wide '>
                     <h1>{addOrUpdate()}</h1>
                 </div>
