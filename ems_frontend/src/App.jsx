@@ -15,16 +15,18 @@ const App = () => {
     console.log("items fetched successfully", response.data);
   }
 
-
   useEffect(() => { fetchItems() }, [])
+
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path='/' element={<ListOfEmployees employees={employees} refresh={fetchItems} />}></Route>
-        <Route path="/add-employee" element={<AddEmployee refresh={fetchItems} />}> </Route>
-       <Route path='/update-employee/:id'element={<AddEmployee refresh={fetchItems}/>}> </Route>
-      </Routes>
+      <div className='w-full px-0 md:px-0'>
+        <Routes>
+          <Route path='/' element={<ListOfEmployees employees={employees} refresh={fetchItems} />} />
+          <Route path='/add-employee' element={<AddEmployee refresh={fetchItems} />} />
+          <Route path='/update-employee/:id' element={<AddEmployee refresh={fetchItems} />} />
+        </Routes>
+      </div>
     </>
   )
 }
